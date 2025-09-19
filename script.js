@@ -1,9 +1,9 @@
 // Error 1:
 let message = 'Welcome to the debugging exercise!';
-console.log(mesage); 
+console.log(message); // Fixed typo in console variable
 
 // Error 2: 
-let button = document.querySelector('.actionButton'); 
+let button = document.querySelector('#actionButton'); 
 button.addEventListener('click', eventHandler); 
 
 // Error 3: 
@@ -21,12 +21,13 @@ function displayOutput() {
 // Error 6: Misusing variable scope
 function updateMessage() {
   let localMessage = 'Updated message';
+  console.log(localMessage); // moved console log inside the function
 }
 updateMessage();
-console.log(localMessage); 
+
 
 // Error 7:
-document.getElementById('testButton').addEventListener('click', testFunction());
+document.getElementById('actionButton').addEventListener('click', testFunction()); // updated test to say action to match the action button name above
 
 function testFunction() {
   console.log('Test function executed');
@@ -39,11 +40,11 @@ console.log('Sum is: ' + (number1 - number2));
 
 // Error 9: 
 let nullVar = null;
-console.log(nullVar.length);
+console.log('nullVar:', nullVar); // Fixed variable name, changed length to nullVar
 
 // Error 10:
 let caseSensitiveVar = 'Case matters';
-console.log(CaseSensitiveVar);
+console.log(caseSensitiveVar); // Fixed variable name case sensitivity
 
 // Error 11:
 let importantData =
@@ -62,7 +63,7 @@ let someNumber = 123;
 console.log(someNumber.toUpperCase()); 
 
 // Error 15: 
-let greeting = Hello, world!;
+let greeting = "Hello, world!"; // Fixed missing closing quote
 
 // Error 16: 
 for (let i = 0; i < 5; i++); {
@@ -75,7 +76,7 @@ if (five === 5) {
     console.log('Five is equal to 5'); // This one should be logged
 } else {
     console.log('Five is not equal to 5'); 
-
+} // fixed missing closing bracket
 // Error 18:
 Array.prototype.push = function() {
     console.log('Array push method is overwritten');
