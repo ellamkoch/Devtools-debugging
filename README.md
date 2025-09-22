@@ -27,6 +27,6 @@ I’m practicing using Chrome DevTools to find and fix JavaScript errors. I got 
 ## Big Takeaways  
 - Check spelling and variable names — JS is picky about case.
 - Scope matters — if you use let/const inside a function or block, it makes a new variable instead of changing the one outside.
-- Use methods on the right stuff (toUpperCase only works on strings).
+- Use methods on the right data types (toUpperCase only works on strings).
 - Keep loops clean — no extra semicolons.
 - console.log is the easiest way to see what’s going on.
